@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#08090a">
+    <meta name="description" content="A lightweight Minecraft launcher for Windows, with Microsoft and Ely.by accounts and mods from Modrinth and CurseForge.">
+    <title>MCL — Minecraft Launcher</title>
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="page">
+      <header><a class="brand" href="https://mclauncher.xyz" aria-label="MCL home"><img src="assets/icon.png" alt="" width="28" height="28"><span>MCL</span></a><button class="nav-button discord-button" id="discord"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M19.7 4.8a18 18 0 0 0-4.5-1.4l-.6 1.2a17 17 0 0 0-5.2 0l-.6-1.2a18 18 0 0 0-4.5 1.4A19 19 0 0 0 1.2 17a18 18 0 0 0 5.5 2.8l1.1-1.8-1.7-.8.4-.3a13 13 0 0 0 11 0l.4.3-1.7.8 1.1 1.8a18 18 0 0 0 5.5-2.8 19 19 0 0 0-3.1-12.2ZM8.5 14.7c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm7 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z" />
+          </svg>Discord</button></header>
+      <main>
+        <section class="hero">
+          <div class="copy">
+            <h1>A lightweight launcher<br>for Minecraft.</h1>
+            <p class="intro">Multi accounts, Instances, Mods. Everything in one place.</p>
+            <div class="action"><button class="download" id="download"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" />
+                </svg>Download MCL</button>
+              <p class="compatibility">For Windows 10 and 11</p>
+            </div>
+          </div>
+          <div class="product"><button class="screenshot" id="preview" aria-label="Enlarge MCL launcher screenshot"><img src="assets/launcher.png" alt="MCL settings with game versions, optimized arguments, memory and Java options" width="1119" height="697"></button></div>
+        </section>
+        <section class="features" aria-label="Launcher features">
+          <article>
+            <h2><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 21v-2a8 8 0 0 1 16 0v2" />
+              </svg>Accounts</h2>
+            <p>Sign in with your Microsoft<br>or Ely.by account.</p>
+          </article>
+          <article>
+            <h2><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h6V3a2 2 0 1 1 4 0v1h6v6h1a2 2 0 1 1 0 4h-1v6h-6v-1a2 2 0 1 0-4 0v1H4v-6h1a2 2 0 1 0 0-4H4Z" />
+              </svg>Mods</h2>
+            <p>Browse and install mods from<br>Modrinth and CurseForge.</p>
+          </article>
+          <article>
+            <h2><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4.5 18a9 9 0 1 1 15 0M12 13l5-5" />
+                <circle cx="12" cy="13" r="1.5" />
+                <path d="M12 4v2M4 12h2m12 0h2" />
+              </svg>Performance</h2>
+            <p>Optimized launcher with<br>low resource usage.</p>
+          </article>
+        </section>
+      </main>
+      <footer><span>© MCL — Minecraft Launcher</span><span>Not affiliated with Mojang or Microsoft.</span></footer>
+    </div>
+    <dialog id="info"><button class="close" aria-label="Close dialog">×</button>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-text"></p>
+    </dialog>
+    <dialog id="image-dialog"><button class="close" aria-label="Close screenshot">×</button><img src="assets/launcher.png" alt="Full MCL launcher screenshot"></dialog>
+    <script src="app.js"></script>
+  </body>
+</html>
